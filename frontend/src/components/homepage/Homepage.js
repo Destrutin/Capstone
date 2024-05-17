@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import UserContext from "../auth/UserContext";
+import "./Homepage.css";
 
 function Homepage() {
   const { currentUser } = useContext(UserContext);

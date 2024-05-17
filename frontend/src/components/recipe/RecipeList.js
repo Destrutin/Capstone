@@ -3,6 +3,7 @@ import SearchBar from "../searchbar/SearchBar";
 import MealDbApi from "../../api/MealDbApi";
 import RecipeCard from "./RecipeCard";
 import UserContext from "../auth/UserContext";
+import "./RecipeList.css";
 
 function RecipeList() {
   const [meals, setMeals] = useState(null);

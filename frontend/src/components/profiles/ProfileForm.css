@@ -1,0 +1,42 @@
+.Profile {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #e6e6fa;
+    border: 1px solid #9370db;
+    border-radius: 5px;
+  }
+  
+  .profile-card {
+    margin-bottom: 1rem;
+  }
+  
+  .profile-input {
+    margin-bottom: 1rem;
+  }
+  
+  .profile-input label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .profile-input input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .profile-submit {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .profile-submit:hover {
+    background-color: #0056b3;
+  }
+  

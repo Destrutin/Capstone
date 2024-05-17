@@ -1,0 +1,26 @@
+.recipe-details {
+  background-color: rgb(193, 231, 227);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.recipe-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.recipe-details p {
+  font-size: 14px;
+  color: #555555;
+}
+
+.recipe-details img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}

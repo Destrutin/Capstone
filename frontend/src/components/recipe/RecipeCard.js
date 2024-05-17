@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import MealDbApi from "../../api/MealDbApi";
 import UserContext from "../auth/UserContext";
+import "./RecipeCard.css";
 
 function RecipeCard({
   id,
@@ -57,24 +58,28 @@ function RecipeCard({
     return <div>Loading...</div>;
   }
 
+  const instructionSteps = instructions ? instructions.split(/\.\s+/) : [];
+
   return (
-    <>
-      <Link className="RecipeCard-card" to={`/recipes/${id}`}>
+    <div className="RecipeCard-card">
+      <Link to={`/recipes/${id}`}>
         <h2>{name}</h2>
       </Link>
       <div className="card-body">
-        <ul>
+        <ol>
           {category && <li>{category}</li>}
           {area && <li>{area}</li>}
           {tags && <li>{tags}</li>}
           {thumbnail && <img src={thumbnail} alt={name} className="card-img" />}
-          {instructions && <li>{instructions}</li>}
-        </ul>
+          {instructionSteps.map((step, index) => (
+            <li key={index}>{step}</li>
+          ))}
+        </ol>
         <button onClick={handleToggleFavorite}>
           {favorited ? "Remove from Favorites" : "Add to Favorites"}
         </button>
       </div>
-    </>
+    </div>
   );
 }
 

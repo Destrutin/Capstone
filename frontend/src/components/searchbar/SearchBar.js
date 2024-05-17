@@ -1,6 +1,7 @@
 // SearchBar.js
 import React, { useState } from "react";
 import MealDbApi from "../../api/MealDbApi";
+import "./SearchBar.css";
 
 function SearchBar({ search }) {
   const [filterType, setFilterType] = useState("name");

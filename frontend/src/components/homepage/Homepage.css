@@ -1,0 +1,42 @@
+.Home {
+  text-align: center;
+}
+
+.homepage-header {
+  padding: 50px 0;
+}
+
+.homepage-header h1 {
+  font-size: 3rem;
+  color: #333;
+}
+
+.homepage-header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.homepage-section {
+  margin-top: 50px;
+}
+
+.homepage-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.homepage-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #9370db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.homepage-button:hover {
+  background-color: #7b68ee;
+}

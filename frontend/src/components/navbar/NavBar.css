@@ -1,0 +1,23 @@
+.NavBar {
+  background-color: #483d8b; 
+  color: #fff; 
+  padding: 15px 0;
+}
+
+.NavBar a {
+  color: #fff; 
+  text-decoration: none;
+  padding: 0 15px;
+  font-size: 18px; 
+  font-weight: bold; 
+}
+
+.NavBar a:hover {
+  text-decoration: underline;
+  color: #ffa07a; 
+}
+
+.NavBar a.NavBar-brand {
+  font-size: 40px; 
+  color: #6495ed; 
+}

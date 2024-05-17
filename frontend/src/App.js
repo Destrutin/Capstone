@@ -6,6 +6,7 @@ import useLocalStorage from "./hooks/useLocalStorage";
 import AppRouter from "./routes/AppRouter";
 import NavBar from "./components/navbar/NavBar";
 import MealDbApi from "./api/MealDbApi";
+import "./App.css";
 
 function App() {
   const [token, setToken] = useLocalStorage(null);

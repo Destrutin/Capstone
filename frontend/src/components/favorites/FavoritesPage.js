@@ -2,6 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import MealDbApi from "../../api/MealDbApi";
 import RecipeCard from "../recipe/RecipeCard";
 import UserContext from "../auth/UserContext";
+import "./FavoritesPage.css";
 
 function FavoritesPage() {
   const [favoriteRecipes, setFavoriteRecipes] = useState([]);

@@ -169,7 +169,7 @@ class User {
     return result.rows;
   }
 
-  static async addToFavorites(userId, recipeId, title, category, instructions) {
+  static async addToFavorites({userId, recipeId, title, category, instructions}) {
     const result = await db.query(
       // The on conflict portion will update the existing record with the new title, category, and instructions instead of throwing an error. Excluded refers to the values that would have been inserted if there was no conflict.
       `INSERT INTO user_favorites (user_id, recipe_id, title, category, instructions)

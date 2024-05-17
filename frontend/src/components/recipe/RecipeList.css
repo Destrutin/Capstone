@@ -1,0 +1,17 @@
+.RecipeList {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .RecipeList h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .RecipeList > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  

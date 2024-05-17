@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import MealDbApi from "../../api/MealDbApi";
 import UserContext from "../auth/UserContext";
+import "./ProfileForm.css";
 
 function ProfileForm() {
   const { currentUser, setCurrentUser } = useContext(UserContext);

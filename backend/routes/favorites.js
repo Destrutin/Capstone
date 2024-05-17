@@ -55,7 +55,12 @@ router.post("/:recipeId", ensureLoggedIn, async (req, res, next) => {
       instructions: instructions,
     });
 
-    await User.addToFavorites(userId, recipeId, title, category, instructions);
+    await User.addToFavorites({
+      userId: userId,
+      recipeId: recipeId,
+      title: title, 
+      category: category,
+      instructions: instructions});
     return res.status(201).json({ message: "Recipe added to favorites" });
   } catch (err) {
     return next(err);
